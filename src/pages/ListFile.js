@@ -54,8 +54,8 @@ class ListFile extends React.Component {
         this.setState({
             loading_progress : "loading"
         });
-        let url = "https://jsonplaceholder.typicode.com/albums"
         // hint_loading_webservice
+        let url = "https://jsonplaceholder.typicode.com/albums"
         let output = await axios.get(url)
         this.setState({
             loading_progress : "complete", repo_items : output.data
